@@ -2,7 +2,7 @@
 
 ## Use static tailwind in one line
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/html-first-labs/static-tailwind/dist/tailwind.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/html-first-labs/static-tailwind@759f1d7/dist/tailwind.css" />
 ```
 
 ## About
@@ -18,7 +18,7 @@ If you're not happy with the choice of classes we've included, you can also use 
 
 ## What's Included
 
-- The current list of classes included by default can be found [here](https://github.com/html-first-labs/static-tailwind@759f1d7/blob/master/src/classes.txt). 
+- The current list of classes included by default can be found [here](https://github.com/html-first-labs/static-tailwind/blob/master/src/classes.txt). 
 
 ## How It Works
 - There is a single .txt file (`/src/classes.txt`) which contains a list of all of the classes we may need to use.  
@@ -38,4 +38,4 @@ If you're not happy with the choice of classes we've included, you can also use 
 - Install npm & npx, then tailwind.
 - Make whatever changes you need to the `/src/classes.txt`
 - Run `npx tailwindcss -i ./src/input.css -o ./dist/tailwind.css` to compile the file.
-- Your compiled file is now available in `/dist/tailwind.css`. Upload it to S3 or wherever you'd like to host it, and reference it normally in the head of your page. 
+- Your compiled file is now available in `/dist/tailwind.css`. Include it in your codebase or host it on a CDN as required.
