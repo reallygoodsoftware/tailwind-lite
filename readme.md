@@ -18,7 +18,7 @@ If you're not happy with the choice of classes we've included, you can also use 
 
 ## What's Included
 
-- The current list of classes included by default can be found [here](https://github.com/html-first-labs/static-tailwind/blob/master/src/classes.txt). 
+- The current list of classes included by default can be found [here](https://github.com/html-first-labs/static-tailwind@759f1d7/blob/master/src/classes.txt). 
 
 ## How It Works
 - There is a single .txt file (`/src/classes.txt`) which contains a list of all of the classes we may need to use.  
@@ -29,7 +29,7 @@ If you're not happy with the choice of classes we've included, you can also use 
   - Download the raw file [here](https://raw.githubusercontent.com/html-first-labs/static-tailwind/master/dist/tailwind.css), and include it in your codebase as normal.
   - Include this line in the head of your page to load it from a CDN: 
   ```
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/html-first-labs/static-tailwind/dist/tailwind.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/html-first-labs/static-tailwind@759f1d7/dist/tailwind.css" />
   ```
 - To customize the classes that are included, see the instructions below.
 
