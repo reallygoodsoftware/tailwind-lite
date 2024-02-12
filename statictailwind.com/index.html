@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Static Tailwind</title>
+    <meta name="description" content="Static Tailwind is Tailwind without the build step">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/html-first-labs/static-tailwind@759f1d7/dist/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <style type="text/css">
+      * {
+        font-family: 'Open Sans', sans-serif;
+      }
+      [data-lastpass-icon-root], [data-lastpass-root]  {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <div class="absolute top-0 bottom-0 left-0 right-0 bg-no-repeat bg-cover bg-fixed" style="background-image: url('/color-bg.png')">
+    </div>
+    <div class="relative h-screen z-10 flex items-center flex-col">
+      <div style="max-width: 600px" class="flex flex-col m-auto gap-y-12">
+        <div>
+          <img src="/logo.svg" class="w-64 m-auto" />
+        </div>
+
+        <div class="text-center text-lg text-gray-500">
+          One line of code. Thousands of classes. 
+          <br/>
+          No Build Step.
+        </div>
+
+        <div class="bg-gray-800 rounded-xl flex flex-shrink px-2 pr-4 text-sm py-3 text-white gap-x-1 items-center self-center">
+          <img src="/bolt.svg" class="w-5 h-5 text-white" />
+          70kb Gzipped
+        </div>
+
+        <div>
+          <form autocomplete="off"></form>
+            <input role="note" type="search" class="rounded-lg shadow-lg px-3 py-2 w-full" style="min-width: 600px" name="readonly-search field"  id="link-search" readonly="true" data-lpignore="true" value='<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/html-first-labs/static-tailwind@759f1d7/dist/tailwind.css" />'>
+          </form>
+        </div>
+      </div>
+
+      <div class="hidden" style="max-width: 600px;">
+        <h2 class="text-2xl font-bold">
+          FAQ
+        </h2>
+        <details class="w-full">
+          <summary class="text-xl font-bold mt-4">
+            What is Static Tailwind?
+          </summary>
+          <div class="text-gray-500 mt-2">
+            Static Tailwind is ...
+          </div>
+        </details>
+      </div>
+    </div>
+
+
+    <script async src="https://umami.toniclabshq.com/script.js" data-website-id="ff715465-61dd-44cb-9336-1ead8ee8bfe7"></script>
+
+  </body>
+</html>
