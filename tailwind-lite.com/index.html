@@ -1,0 +1,225 @@
+<html>
+
+<head>
+  <title>Tailwind Lite</title>
+  <meta name="description" content="Static Tailwind is Tailwind without the build step">
+  <link rel="stylesheet" href="https://cdn.statictailwind.com/1.0.2.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+  </noscript>
+
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <script src="https://cdn.mini-js.com/1.0.14.js"></script>
+  <style type="text/css">
+    a {
+      text-decoration: underline;
+      color: #5479FF;
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 20px;
+      line-height: 30px;
+    }
+
+    section button {
+      font-size: 20px;
+    }
+
+    section ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin: 15px 0;
+    }
+
+    * {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    [data-lastpass-icon-root],
+    [data-lastpass-root] {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body class="bg-no-repeat bg-cover bg-fixed" style="background-image: url('/color-bg.png')">
+
+  <script>
+    faqs = [
+    ]
+  </script>
+
+  <div class="relative h-screen z-10 flex items-center flex-col">
+    <div style="max-width: 600px" class="flex flex-col m-auto gap-y-12">
+      <div>
+        <img src="/tailwind-lite.svg" class="w-64 m-auto" />
+      </div>
+
+      <div class="text-center text-lg text-gray-500">
+        One line of code. Thousands of classes.
+        <br />
+        No Build Step.
+      </div>
+
+      <div>
+        <form autocomplete="off"></form>
+        <input role="note" type="search" class="rounded-lg shadow-lg px-3 py-2 w-full" style=""
+          name="readonly-search field" id="link-search" readonly="true" data-lpignore="true"
+          value='<link rel="stylesheet" href="https://cdn.tailwind-lite.com/1.0.2.css" />'>
+        </form>
+      </div>
+
+      <div class="accordion rounded-md bg-white overflow-hidden border border-gray-200"
+        :scope="activeSection = 'whatis'">
+        <section class="transition-all grid border-gray-200 border-b  ease-in-out"
+          :class="scope.activeSection =='whatis' ? '[grid-template-rows:0fr_1fr]' : '[grid-template-rows:0fr_0fr]'">
+          <button :click="scope.activeSection = 'whatis';"
+            class=" hover:bg-gray-100 cursor-pointer font-bold p-4 flex justify-between"
+            :class="scope.activeSection =='whatis' ? 'bg-gray-100' : ''" :aria-expanded="scope.activeSection=='whatis'">
+            <div>
+              What is Tailwind Lite?
+            </div>
+            <div class="transition-all" :class="scope.activeSection =='whatis' ? '' : 'rotate-180'">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-5 h-5 text-neutral-800">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </button>
+          <div class="overflow-hidden">
+            <div class="px-8 py-6">
+              <p>
+                Tailwind Lite is a stripped back version of <a href="https://tailwindcss.com"
+                  target="_blank">Tailwind</a>
+                - the popular
+                utility-first CSS framework, that can be added to your site or app with a single line of code (as
+                opposed
+                to the usual setup steps that Tailwind <a href="https://tailwindcss.com/docs/installation"
+                  target="_blank">requires</a>).
+              </p>
+              <p>The benefits of using Tailwind Lite are easy setup and a lower maintenance burden. The drawback is that
+                Tailwind Lite does not enable all of the classes that regular Tailwind does.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="transition-all grid border-gray-200 border-b ease-in-out"
+          :class="scope.activeSection =='included' ? '[grid-template-rows:0fr_1fr]' : '[grid-template-rows:0fr_0fr]'">
+          <button :click="scope.activeSection = 'included';"
+            class="hover:bg-gray-100 cursor-pointer font-bold p-4 flex justify-between"
+            :class="scope.activeSection =='included' ? 'bg-gray-100' : ''"
+            :aria-expanded="scope.activeSection=='included'">
+            <div>
+              What's Included (And What's Not)?
+            </div>
+            <div class="transition-all" :class="scope.activeSection =='included' ? '' : 'rotate-180'">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-5 h-5 text-neutral-800">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </button>
+          <div class="overflow-hidden">
+            <div class="p-8">
+              <ul class="mt-0">
+                <li>
+                  Any class that contains square brackets is not included.
+                </li>
+                <li>
+                  All of the included classes are listed <a
+                    href="https://raw.githubusercontent.com/html-first-labs/static-tailwind/main/src/classes.txt"
+                    target="_blank">here</a>.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="transition-all grid border-gray-200 border-b  ease-in-out"
+          :class="scope.activeSection =='when' ? '[grid-template-rows:0fr_1fr]' : '[grid-template-rows:0fr_0fr]'">
+          <button :click="scope.activeSection = 'when';"
+            class="hover:bg-gray-100 cursor-pointer font-bold p-4 flex justify-between"
+            :class="scope.activeSection =='when' ? 'bg-gray-100' : ''" :aria-expanded="scope.activeSection=='when'">
+            <div>
+              When should I use Tailwind Lite?
+            </div>
+            <div class="transition-all" :class="scope.activeSection =='when' ? '' : 'rotate-180'">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-5 h-5 text-neutral-800">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </button>
+          <div class="overflow-hidden">
+            <div class="p-8 py-6">
+              You should us Tailwind Lite if...
+              <ul>
+                <li>
+                  You find the process of setting up and running `npx tailwindcss` to be tedious and/or unnecessary.
+                </li>
+                <li>
+                  You would prefer not to have the additional dependency of npm/npx in your codebase.
+                </li>
+                <li>
+                  You mainly use Tailwind for it's utility classes, and rarely customize the default Tailwind setup.
+                </li>
+              </ul>
+
+              You should use Tailwind Lite if the benefits from skipping the Tailwind tooling outweigh the
+              drawbacks:
+              <ul>
+                <li>
+                  A slightly longer first-visit load time on slow connections.
+                </li>
+                <li>
+                  Not having access to custom Tailwind classes
+                </li>
+              </ul>
+              <div class="p-4 mt-4 bg-green-100 rounded">
+                Tailwind Lite's file size is about 90kb (minified and gzipped). This is almost certainly larger than if
+                you use Regular Tailwind. On regular connections this will take about half
+                a second to download. On slow connections it will take about 5 seconds. This file will be
+                downloaded only once by each user - for their first pageview. After that it will load instantly.
+                In other words, the speed/performance hit is minor, only happens on the first pageview, and
+                is only noticeable on slow connections.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div :each="faq, index in faqs">
+          <section class="transition-all grid border-gray-200 border-b  ease-in-out"
+            :class="scope.activeSection ==index ? '[grid-template-rows:0fr_1fr]' : '[grid-template-rows:0fr_0fr]'">
+            <button :click="scope.activeSection = index;console.log(index)"
+              class="hover:bg-gray-100 cursor-pointer font-bold p-4 flex justify-between"
+              :aria-expanded="scope.activeSection==index">
+              <div :text="faq.question"> </div>
+              <div class="transition-all" :class="scope.activeSection ==index ? '' : 'rotate-180'">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-5 h-5 text-neutral-800">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </div>
+            </button>
+            <div class="overflow-hidden">
+              <div class="p-8 pt-2" :text="faq.answer">
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script async src="https://umami.toniclabshq.com/script.js"
+    data-website-id="ff715465-61dd-44cb-9336-1ead8ee8bfe7"></script>
+
+</body>
+
+</html>
