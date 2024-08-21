@@ -1471,7 +1471,7 @@
 .right-72                      
 .right-80                      
 .right-96                      
-.bottom-0                      .sm:right-0                       .md:right-0                       .lg:right-0                       .xl:right-0                       .2xl:right-0
+.bottom-0                      .sm:bottom-0                       .md:bottom-0                       .lg:bottom-0                       .xl:bottom-0                       .2xl:bottom-0
 .bottom-0.5                    
 .bottom-1                      
 .bottom-1.5                    
