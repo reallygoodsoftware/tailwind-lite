@@ -6,7 +6,7 @@ The benefits of using Tailwind Lite are easy setup and a lower maintenance burde
 
 ## Add Tailwind Lite in one line
 ```
-<link rel="stylesheet" href="https://cdn.tailwind-lite.com/1.0.3.css" />
+<link rel="stylesheet" href="https://cdn.tailwind-lite.com/2.0.1.css" />
 ```
 
 ## Background
@@ -21,18 +21,18 @@ Tailwind Lite is an attempt to solve some of those problems. We've compiled the 
 Use the JsDelivr CDN
 
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/reallygoodsoftware/tailwind-lite@759f1d7/dist/tailwind.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/reallygoodsoftware/tailwind-lite@759f1d7/dist/2.0.1.css" />
 ```
 
 Use the Tailwind Lite CDN
 
 ```
-<link rel="stylesheet" href="https://cdn.tailwind-lite.com/1.0.3.css" />
+<link rel="stylesheet" href="https://cdn.tailwind-lite.com/2.0.1.css" />
 ```
 
 Add it to your codebase directly
 
-- Download the file from [here](https://cdn.tailwind-lite.com/1.0.3.css).
+- Download the file from [here](https://cdn.tailwind-lite.com/2.0.1.css).
 - Import this stylesheet as normal.
 
 
