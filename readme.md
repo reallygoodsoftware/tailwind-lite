@@ -6,7 +6,7 @@ The benefits of using Tailwind Lite are easy setup and a lower maintenance burde
 
 ## Add Tailwind Lite in one line
 ```
-<link rel="stylesheet" href="https://cdn.tailwind-lite.com/1.0.2.css" />
+<link rel="stylesheet" href="https://cdn.tailwind-lite.com/1.0.3.css" />
 ```
 
 ## Background
@@ -27,12 +27,12 @@ Use the JsDelivr CDN
 Use the Tailwind Lite CDN
 
 ```
-<link rel="stylesheet" href="https://cdn.tailwind-lite.com/1.0.2.css" />
+<link rel="stylesheet" href="https://cdn.tailwind-lite.com/1.0.3.css" />
 ```
 
 Add it to your codebase directly
 
-- Download the file from [here](https://cdn.tailwind-lite.com/1.0.2.css).
+- Download the file from [here](https://cdn.tailwind-lite.com/1.0.3.css).
 - Import this stylesheet as normal.
 
 
@@ -51,5 +51,5 @@ If you're not happy with the choice of classes we've included, you can also use 
 - Pull this repo
 - Install npm & npx, then tailwind.
 - Make whatever changes you need to the `/src/classes.txt`
-- Run `npx tailwindcss -i ./src/input.css -o ./dist/tailwind.css` to compile the file.
-- Your compiled file is now available in `/dist/tailwind.css`. Include it in your codebase or host it on a CDN as required.
+- Run `npx @tailwindcss/cli -i ./src/inputv.css -o ./dist/NUMBER.css` to compile the file.
+- Your compiled file is now available in `/dist/`. Include it in your codebase or host it on a CDN as required.

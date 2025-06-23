@@ -12264,6 +12264,10 @@ video {
   outline-offset: 2px;
 }
 
+.outline-offset-0 {
+  outline-offset: 0px;
+}
+
 .outline-black {
   outline-color: #000;
 }
@@ -20780,6 +20784,10 @@ video {
     outline-offset: 2px;
   }
 
+  .sm\:outline-offset-0 {
+    outline-offset: 0px;
+  }
+
   .sm\:outline-black {
     outline-color: #000;
   }
@@ -27017,6 +27025,10 @@ video {
   .md\:outline-none {
     outline: 2px solid transparent;
     outline-offset: 2px;
+  }
+
+  .md\:outline-offset-0 {
+    outline-offset: 0px;
   }
 
   .md\:outline-black {
@@ -33258,6 +33270,10 @@ video {
     outline-offset: 2px;
   }
 
+  .lg\:outline-offset-0 {
+    outline-offset: 0px;
+  }
+
   .lg\:outline-black {
     outline-color: #000;
   }
@@ -39433,6 +39449,10 @@ video {
     outline-offset: 2px;
   }
 
+  .xl\:outline-offset-0 {
+    outline-offset: 0px;
+  }
+
   .xl\:outline-black {
     outline-color: #000;
   }
@@ -45606,6 +45626,10 @@ video {
   .\32xl\:outline-none {
     outline: 2px solid transparent;
     outline-offset: 2px;
+  }
+
+  .\32xl\:outline-offset-0 {
+    outline-offset: 0px;
   }
 
   .\32xl\:outline-black {

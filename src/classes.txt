@@ -2707,7 +2707,8 @@
 .pointer-events-none           .sm:pointer-events-none           .md:pointer-events-none           .lg:pointer-events-none           .xl:pointer-events-none           .2xl:pointer-events-none           
 .outline-none                  .sm:outline-none                  .md:outline-none                  .lg:outline-none                  .xl:outline-none                  .2xl:outline-none                  
 .outline-white                 .sm:outline-white                 .md:outline-white                 .lg:outline-white                 .xl:outline-white                 .2xl:outline-white                 
-.outline-black                 .sm:outline-black                 .md:outline-black                 .lg:outline-black                 .xl:outline-black                 .2xl:outline-black                 
+.outline-black                 .sm:outline-black                 .md:outline-black                 .lg:outline-black                 .xl:outline-black                 .2xl:outline-black             
+.outline-offset-0              .sm:outline-offset-0              .md:outline-offset-0              .lg:outline-offset-0              .xl:outline-offset-0              .2xl:outline-offset-0
 .appearance-none               .sm:appearance-none               .md:appearance-none               .lg:appearance-none               .xl:appearance-none               .2xl:appearance-none               
 # SVG
 .fill-current                  .sm:fill-current                  .md:fill-current                  .lg:fill-current                  .xl:fill-current                  .2xl:fill-current                  
